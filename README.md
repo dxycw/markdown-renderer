@@ -1,30 +1,18 @@
-<h1 align="center">Multiplatform-Markdown-Renderer</h1>
+<h1 align="center">Markdown-Renderer</h1>
 
 <p align="center">
     将 Markdown 渲染成原生 Compose UI —— 一个 API，适用于所有平台。
 </p>
 
-<p align="center">
-    <a href="https://github.com/mikepenz/multiplatform-markdown-renderer/actions"><img src="https://github.com/mikepenz/multiplatform-markdown-renderer/workflows/CI/badge.svg" alt="CI status"></a>
-    <a href="https://central.sonatype.com/artifact/com.mikepenz/multiplatform-markdown-renderer"><img src="https://img.shields.io/maven-central/v/com.mikepenz/multiplatform-markdown-renderer?style=flat-square&color=%231B4897" alt="Maven Central version"></a>
-    <a href="https://scorecard.dev/viewer/?uri=github.com/mikepenz/multiplatform-markdown-renderer"><img src="https://img.shields.io/ossf-scorecard/github.com/mikepenz/multiplatform-markdown-renderer?style=flat-square&label=scorecard" alt="OpenSSF Scorecard"></a>
-    <a href="https://github.com/mikepenz/multiplatform-markdown-renderer/blob/develop/LICENSE"><img src="https://img.shields.io/badge/license-Apache%202.0-blue?style=flat-square" alt="Apache 2.0 license"></a>
-</p>
 
-<p align="center">
-    <picture>
-        <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/mikepenz/multiplatform-markdown-renderer/develop/art/hero-dark.svg">
-        <img src="https://raw.githubusercontent.com/mikepenz/multiplatform-markdown-renderer/develop/art/hero-light.svg" width="100%" alt="A markdown String is parsed by JetBrains Markdown into an AST, mapped through overridable MarkdownComponents, and rendered as Compose Multiplatform UI on Android, iOS, Desktop, Web and macOS.">
-    </picture>
-</p>
+[![Maven Central](https://img.shields.io/maven-central/v/io.github.dxycw/markdown-renderer?label=Maven%20Central&color=orange)](https://central.sonatype.com/artifact/io.github.dxycw/markdown-renderer)
+[![Kotlin](https://img.shields.io/badge/kotlin-v2.4.21-blue.svg?logo=kotlin)](http://kotlinlang.org)
+[![Compose Multiplatform](https://img.shields.io/badge/Compose%20Multiplatform-v1.12.2-blue)](https://github.com/JetBrains/compose-multiplatform)
 
-<p align="center">
-    <a href="#quickstart">Quickstart</a> &bull;
-    <a href="#showcase">Showcase</a> &bull;
-    <a href="#reference">Reference</a> &bull;
-    <a href="https://github.com/mikepenz/multiplatform-markdown-renderer/blob/develop/MIGRATION.md">Migration</a> &bull;
-    <a href="https://github.com/mikepenz/multiplatform-markdown-renderer/blob/develop/CHANGELOG.md">Changelog</a>
-</p>
+![badge-android](http://img.shields.io/badge/platform-android-6EDB8D.svg?style=flat)
+![badge-ios](http://img.shields.io/badge/platform-ios-CDCDCD.svg?style=flat)
+![badge-desktop](http://img.shields.io/badge/platform-desktop-DB413D.svg?style=flat)
+![badge-web](https://img.shields.io/badge/platform-web-59B6EC.svg?style=flat)
 
 |                             |                                                                                           |
 |-----------------------------|-------------------------------------------------------------------------------------------|
@@ -69,8 +57,6 @@ val markdownState = rememberMarkdownState(markdown)
 Markdown(markdownState)
 ```
 
-完整配置——自定义组件、图片加载、语法高亮、扩展跨度——请见下面的[参考](#参考)。
-
 -------
 
 ### 包含什么 🚀
@@ -95,6 +81,12 @@ Markdown(markdownState)
 - [Compose Multiplatform](https://github.com/JetBrains/compose-multiplatform) - 用于跨平台的界面渲染
 - [Extended Spans](https://github.com/saket/extended-spans) - 用于高级文本样式（作为多平台集成）
 - [Highlights](https://github.com/SnipMeDev/Highlights) - 用于代码语法高亮（可选）
+
+## 更新日志
+
+### 1.0.0
+
+* 把“multiplatform-markdown-renderer”0.46.0的所有库导入到“markdown-renderer”中；
 
 ## License
 
