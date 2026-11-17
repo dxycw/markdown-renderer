@@ -27,7 +27,7 @@ coil3 = "3.6.3"
 kotlinx-collections-immutable = "0.5.1"
 
 markdown = "0.7.18"
-highlights = "1.1.0"
+highlights = "1.2.0"
 
 [libraries]
 kotlin-test = { module = "org.jetbrains.kotlin:kotlin-test", version.ref = "kotlin" }

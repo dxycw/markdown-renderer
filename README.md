@@ -103,7 +103,11 @@ Markdown(markdownState)
 
 ### 1.0.0
 
+* 发布到 Maven Central 仓库；
+* 优化 项目文档，完善使用方法、平台支持、依赖库等信息；
 * 把“multiplatform-markdown-renderer”0.46.0版本的所有库导入到“markdown-renderer”中；
+* 添加 Multiplatform平台的 org.jetbrains:markdown 依赖库版本为 0.7.18；
+* 添加 Multiplatform平台的 dev.snipme:highlights 依赖库版本为 1.2.0；
 
 ## License
 
