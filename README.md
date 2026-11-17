@@ -1,11 +1,14 @@
+> [!CAUTION]
+>
+> **注意：本库是本作者个人私库（不公开分享本库，不建议他人使用），如果想使用本库可以在项目中使用依赖库或克隆分支（可以自己新建一个分支修改本库，不可提交到本库），请不要上传提交，请勿私自外传本项目。**
+
+<div align="center">
+
 <h1 align="center">Markdown-Renderer</h1>
 
 <p align="center">
     将 Markdown 渲染成原生 Compose UI —— 一个 API，适用于所有平台。
 </p>
-
-
-<div align="center">
 
 [![Maven Central](https://img.shields.io/maven-central/v/io.github.dxycw/markdown-renderer?label=Maven%20Central&color=orange)](https://central.sonatype.com/artifact/io.github.dxycw/markdown-renderer)
 [![Kotlin](https://img.shields.io/badge/kotlin-v2.4.21-blue.svg?logo=kotlin)](http://kotlinlang.org)
@@ -17,7 +20,6 @@
 ![badge-web](https://img.shields.io/badge/platform-web-59B6EC.svg?style=flat)
 
 </div>
-
 
 
 |                             |                                                                                           |
@@ -34,9 +36,18 @@
 **1 — 添加依赖。** 选择与你的 Material 主题匹配的模块：
 
 ```kotlin
-dependencies {
-    implementation("com.mikepenz:multiplatform-markdown-renderer:0.43.0")
+
+// 在项目的 build.gradle.kts 文件中添加依赖项
+kotlin {
+    sourceSets {
+        // 多平台，
+        commonMain.dependencies {
+            // 如果使用多平台 Jetpack Compose Multiplatform 项目，请添加以下依赖项
+            implementation("io.github.dxycw:markdown-renderer:1.0.0")
+        }
+    }
 }
+
 ```
 
 **2 — 渲染。** 从 `com.mikepenz.markdown.m3`（或 `.m2`）导入 `Markdown`：
@@ -51,7 +62,7 @@ Markdown(
     - Bullet points
     - **Bold** and *italic* text
 
-    [Check out this link](https://github.com/mikepenz/multiplatform-markdown-renderer)
+    [Check out this link](https://github.com/dxycw/markdown-renderer)
     """.trimIndent()
 )
 ```
@@ -92,7 +103,7 @@ Markdown(markdownState)
 
 ### 1.0.0
 
-* 把“multiplatform-markdown-renderer”0.46.0的所有库导入到“markdown-renderer”中；
+* 把“multiplatform-markdown-renderer”0.46.0版本的所有库导入到“markdown-renderer”中；
 
 ## License
 
