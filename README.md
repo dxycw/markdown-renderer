@@ -5,6 +5,8 @@
 </p>
 
 
+<div align="center">
+
 [![Maven Central](https://img.shields.io/maven-central/v/io.github.dxycw/markdown-renderer?label=Maven%20Central&color=orange)](https://central.sonatype.com/artifact/io.github.dxycw/markdown-renderer)
 [![Kotlin](https://img.shields.io/badge/kotlin-v2.4.21-blue.svg?logo=kotlin)](http://kotlinlang.org)
 [![Compose Multiplatform](https://img.shields.io/badge/Compose%20Multiplatform-v1.12.2-blue)](https://github.com/JetBrains/compose-multiplatform)
@@ -13,6 +15,10 @@
 ![badge-ios](http://img.shields.io/badge/platform-ios-CDCDCD.svg?style=flat)
 ![badge-desktop](http://img.shields.io/badge/platform-desktop-DB413D.svg?style=flat)
 ![badge-web](https://img.shields.io/badge/platform-web-59B6EC.svg?style=flat)
+
+</div>
+
+
 
 |                             |                                                                                           |
 |-----------------------------|-------------------------------------------------------------------------------------------|
